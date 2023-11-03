@@ -1,0 +1,17 @@
+function findNb(m) {
+  console.log(m)
+  let n = 0;
+  let mCopy = m;
+  
+  while (mCopy > 0) {
+    n++;
+    mCopy -= n**3;
+  }
+  
+  if (mCopy == 0) {
+    return n;
+  } else {
+    return -1;
+  }
+  
+}
